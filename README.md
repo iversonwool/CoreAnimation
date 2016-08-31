@@ -8,7 +8,7 @@
 1.动画时钟
 
 3->CABasicAnimation
-1.CABasicAnimation
+1.CABasicAnimation 核心动画的注意点
 2.CAKeyframeAnimation
 
 4->CATransition
