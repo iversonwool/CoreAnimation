@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AnimationGroupViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
@@ -14,6 +15,12 @@
 @end
 
 @implementation ViewController
+- (IBAction)animationGroup:(id)sender {
+    
+    AnimationGroupViewController *aniGroupVC = [[AnimationGroupViewController alloc] init];
+    [self presentViewController:aniGroupVC animated:YES completion:nil];
+    
+}
 
 // 这个 方法不会走
 - (instancetype)init

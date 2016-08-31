@@ -18,6 +18,7 @@
 		D4456AC01D767D1900AE7972 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4456ABD1D767D1900AE7972 /* 1.png */; };
 		D4456AC11D767D1900AE7972 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D4456ABE1D767D1900AE7972 /* 3.png */; };
 		D4456AC21D767D1900AE7972 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D4456ABF1D767D1900AE7972 /* 2.png */; };
+		D4456AC51D76884E00AE7972 /* AnimationGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4456AC41D76884E00AE7972 /* AnimationGroupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		D4456ABD1D767D1900AE7972 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		D4456ABE1D767D1900AE7972 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		D4456ABF1D767D1900AE7972 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		D4456AC31D76884E00AE7972 /* AnimationGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationGroupViewController.h; sourceTree = "<group>"; };
+		D4456AC41D76884E00AE7972 /* AnimationGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationGroupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				D4456A8E1D767D0600AE7972 /* AppDelegate.m */,
 				D4456A901D767D0600AE7972 /* ViewController.h */,
 				D4456A911D767D0600AE7972 /* ViewController.m */,
+				D4456AC31D76884E00AE7972 /* AnimationGroupViewController.h */,
+				D4456AC41D76884E00AE7972 /* AnimationGroupViewController.m */,
 				D4456A931D767D0600AE7972 /* Main.storyboard */,
 				D4456A961D767D0600AE7972 /* Assets.xcassets */,
 				D4456A981D767D0600AE7972 /* LaunchScreen.storyboard */,
@@ -286,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4456A921D767D0600AE7972 /* ViewController.m in Sources */,
+				D4456AC51D76884E00AE7972 /* AnimationGroupViewController.m in Sources */,
 				D4456A8F1D767D0600AE7972 /* AppDelegate.m in Sources */,
 				D4456A8C1D767D0600AE7972 /* main.m in Sources */,
 			);

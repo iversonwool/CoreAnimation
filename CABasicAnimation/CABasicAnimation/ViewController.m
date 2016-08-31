@@ -35,6 +35,8 @@
 //    [self rotation];
     [self scale];
 }
+
+// 路径动画
 - (IBAction)keyFrameAnimation:(id)sender {
     
     CAKeyframeAnimation *keyframeAni = [CAKeyframeAnimation animation];

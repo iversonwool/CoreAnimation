@@ -10,3 +10,6 @@
 3->CABasicAnimation
 1.CABasicAnimation
 2.CAKeyframeAnimation
+
+4->CATransition
+1.转场动画
