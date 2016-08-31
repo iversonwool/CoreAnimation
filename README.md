@@ -13,3 +13,4 @@
 
 4->CATransition
 1.转场动画
+2.动画组 CAAnimationGroup

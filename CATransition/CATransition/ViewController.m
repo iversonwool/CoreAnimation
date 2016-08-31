@@ -22,9 +22,8 @@
     
 }
 
-// 这个 方法不会走
-- (instancetype)init
-{
+// 这个方法不会掉用
+- (instancetype)init {// storyboard创建
     self = [super init];
     if (self) {
         self.count = 1;

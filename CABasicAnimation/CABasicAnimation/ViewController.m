@@ -9,8 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (nonatomic, weak) CALayer *layer;
 
+@property (nonatomic, weak) CALayer *layer;
 
 @end
 
@@ -33,7 +33,39 @@
 - (IBAction)basicAnimation:(id)sender {
     
 //    [self rotation];
-    [self scale];
+//    [self scale];
+    [self translation];
+}
+
+
+- (void)translation {
+
+    CABasicAnimation *ani = [CABasicAnimation animation];
+    
+    ani.keyPath = @"position";
+    ani.toValue = [NSValue valueWithCGPoint:CGPointMake(100, 300)];
+    // 不需要设置代理
+    ani.delegate = self;
+    ani.removedOnCompletion = NO;
+    ani.fillMode = kCAFillModeForwards;
+    [self.layer addAnimation:ani forKey:nil];
+}
+
+// animation的两个代理方法
+#pragma mark -CABasicAnimationDelegate
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    NSLog(@"%@", NSStringFromCGPoint(self.layer.position));
+    
+    /**
+     * 发现位置并没有真正改变
+     * ===说明一个问题：核心动画都是假象，并不能改变layer的真实属性，实际的位置和展示的位置并不是同一个位置，实际位置永远在最开始设置的位置===
+     * 当修改其位置，要用UIView的动画
+     * 核心动画一般用于过渡动画
+     */
+}
+
+- (void)animationDidStart:(CAAnimation *)anim {
+    
 }
 
 // 路径动画
@@ -79,6 +111,9 @@
     
     [self.layer addAnimation:basicAni forKey:nil];
 }
+
+
+
 
 - (void)rotation {
     CABasicAnimation *basicAni = [CABasicAnimation animation];
