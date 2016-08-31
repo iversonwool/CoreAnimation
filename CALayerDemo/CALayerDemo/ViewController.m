@@ -60,6 +60,10 @@
 - (IBAction)animation:(id)sender {
     // animation
     [UIView animateWithDuration:1 animations:^{
+        
+        
+        // 比较官方的写法
+
         // 1.二维动画
         //self.demoView.transform = CGAffineTransformMakeRotation(M_PI_4);
         
@@ -67,12 +71,11 @@
         //self.demoView.layer.transform = CATransform3DMakeRotation(M_PI_4, 0, 0, 1);
         
         // 利用KVC实现三维动画
-        // 比较官方的写法
-        
+        // 这种写法虽然可以实现功能，但可能会有意想不到的bug,在Clock项目会有延时
+
         NSValue *rotationValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_4, 0, 0, 1)];
         [self.demoView.layer setValue:rotationValue forKeyPath:@"transform"];
          
-        // 这种写法虽然可以实现功能，但可能会有意想不到的bug,在Clock项目会有延时
         //[self.demoView.layer setValue:@100 forKeyPath:@"transform.translation.y"];
     }];
     
