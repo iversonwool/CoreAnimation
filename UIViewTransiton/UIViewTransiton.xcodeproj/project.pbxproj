@@ -202,7 +202,7 @@
 		D4E1F5AB1D76EA1900B5206A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "李浩";
 				TargetAttributes = {
 					D4E1F5B21D76EA1900B5206A = {
@@ -499,6 +499,7 @@
 				D4E1F5E21D76EA1A00B5206A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4E1F5E31D76EA1A00B5206A /* Build configuration list for PBXNativeTarget "UIViewTransitonTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +508,7 @@
 				D4E1F5E51D76EA1A00B5206A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4E1F5E61D76EA1A00B5206A /* Build configuration list for PBXNativeTarget "UIViewTransitonUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +517,7 @@
 				D4E1F5E81D76EA1A00B5206A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
