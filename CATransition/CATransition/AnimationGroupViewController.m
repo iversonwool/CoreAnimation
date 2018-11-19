@@ -6,6 +6,8 @@
 //  Copyright © 2016年 李浩. All rights reserved.
 //
 
+// CAAnimationGroup
+
 #import "AnimationGroupViewController.h"
 
 @interface AnimationGroupViewController ()
@@ -33,7 +35,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    
+    NSLog(@"%@", [NSThread currentThread]);
     // 添加动画
     // 旋转动画
     CABasicAnimation *rotation = [CABasicAnimation animation];

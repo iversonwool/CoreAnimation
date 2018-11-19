@@ -6,9 +6,11 @@
 //  Copyright © 2016年 李浩. All rights reserved.
 //
 
+// CABasicAnimation & CAKeyframeAnimation
+
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <CAAnimationDelegate>
 
 @property (nonatomic, weak) CALayer *layer;
 

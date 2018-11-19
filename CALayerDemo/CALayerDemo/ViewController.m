@@ -6,10 +6,15 @@
 //  Copyright © 2016年 李浩. All rights reserved.
 //
 
+
+//UIView +animate
+// CATransaction & UIView animateWith...
+
 #import "ViewController.h"
 #import "UIView+TransformFrame.h"
 
 @interface ViewController ()
+
 @property (nonatomic, weak) UIView *demoView;
 @property (nonatomic, weak) CALayer *demoLayer;
 
@@ -48,18 +53,18 @@
 }
 - (IBAction)animatableProperty:(id)sender {
     
-    // 默认会有隐式动画
+    // 默认会有隐式动画 （会有过渡效果，不会显得很突兀）
     //
-    [CATransaction begin];
+    // [CATransaction begin];
 //     取消隐式动画
 //    [CATransaction setDisableActions:YES];
     self.demoLayer.position = CGPointMake(200, 200);
-    [CATransaction commit];
+    //[CATransaction commit];
 }
 
 - (IBAction)animation:(id)sender {
     // animation
-    [UIView animateWithDuration:1 animations:^{
+    [UIView animateWithDuration:1. animations:^{
         
         
         // 比较官方的写法
@@ -78,10 +83,7 @@
          
         //[self.demoView.layer setValue:@100 forKeyPath:@"transform.translation.y"];
     }];
-    
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

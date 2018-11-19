@@ -100,6 +100,10 @@
 //    [self.secondHand setValue:@(RadianFromAngle(6*currentSecond)) forKeyPath:@"transform.rotation"];
 }
 
+- (void)privateMethod {
+    NSLog(@"hello world!");
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

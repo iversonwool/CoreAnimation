@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,19 +15,12 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sgu-jJ-tfn">
-                                <rect key="frame" x="140" y="70" width="320" height="480"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="bYw-tQ-Wtf"/>
-                                    <constraint firstAttribute="height" constant="480" id="cCC-ot-Rl3"/>
-                                </constraints>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sgu-jJ-tfn"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI2-iZ-apx">
-                                <rect key="frame" x="244.5" y="560" width="111" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="111" id="4uG-Lg-Pk6"/>
                                     <constraint firstAttribute="height" constant="30" id="jxw-wE-zwZ"/>
@@ -37,12 +31,14 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Sgu-jJ-tfn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FVX-DR-WON"/>
+                            <constraint firstItem="SI2-iZ-apx" firstAttribute="top" secondItem="Sgu-jJ-tfn" secondAttribute="bottom" id="LNe-CJ-3mt"/>
+                            <constraint firstItem="Sgu-jJ-tfn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d9p-Wn-Afv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SI2-iZ-apx" secondAttribute="bottom" constant="10" id="iAz-Eq-Og9"/>
-                            <constraint firstItem="Sgu-jJ-tfn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="pBd-TI-3q5"/>
+                            <constraint firstItem="Sgu-jJ-tfn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="isC-sW-izp"/>
                             <constraint firstItem="SI2-iZ-apx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v7Z-2N-hPZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Sgu-jJ-tfn" secondAttribute="trailing" id="x7T-cF-Gsz"/>
                         </constraints>
                     </view>
                     <connections>

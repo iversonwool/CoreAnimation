@@ -6,6 +6,9 @@
 //  Copyright © 2016年 李浩. All rights reserved.
 //
 
+
+// CATransition 
+
 #import "ViewController.h"
 #import "AnimationGroupViewController.h"
 
@@ -34,6 +37,8 @@
 
 
 - (void)awakeFromNib {
+    
+    [super awakeFromNib];
     self.count = 1;
     NSLog(@"%s, %lu", __func__, _count);
 }
@@ -47,9 +52,9 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self transitionWithCATransition];
+//    [self transitionWithCATransition];
     
-//    [self transitionWithUIViewTransition];
+    [self transitionWithUIViewTransition];
     
 }
 
@@ -62,7 +67,7 @@
     self.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%lu", _count]];
     // 为啥我们过渡动画一般不用UIView自带的动画，因为其种类比较少不太好看？
     /**UIVIew封装的过渡动画*/
-    [UIView transitionWithView:self.imgView duration:0.5 options:UIViewAnimationOptionTransitionFlipFromRight animations:nil completion:nil];
+    [UIView transitionWithView:self.imgView duration:0.5 options:UIViewAnimationOptionTransitionFlipFromBottom animations:nil completion:nil];
 }
 
 
@@ -77,10 +82,10 @@
     // 动画方式
     transiton.type = @"cube";
     // 动画方式变化的方向
-    transiton.subtype = kCATransitionReveal;
+    transiton.subtype = kCATransitionFromLeft;
     // 动画时间
     //    transiton.duration = 2;
-    //    transiton.endProgress
+//        transiton.endProgress
     [self.imgView.layer addAnimation:transiton forKey:nil];
 
 }
