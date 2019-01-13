@@ -31,9 +31,11 @@
         CAKeyframeAnimation *keyframeAni = [CAKeyframeAnimation animation];
         keyframeAni.keyPath = @"transform.rotation";
         
-        keyframeAni.values = @[@(RadianFromAngle(-5)), @(RadianFromAngle(5)), @(RadianFromAngle(-5))];// 如果不加最后这个角度 图标的抖动不是很流畅 
+        keyframeAni.values = @[@(RadianFromAngle(-2.5)), @(RadianFromAngle(2.5)), @(RadianFromAngle(-2.5))];// 如果不加最后这个角度 图标的抖动不是很流畅
         
         keyframeAni.repeatCount = MAXFLOAT;
+        keyframeAni.removedOnCompletion = NO;
+        keyframeAni.fillMode = kCAFillModeForwards;
         [self.imgView.layer addAnimation:keyframeAni forKey:nil];
     }
 }
